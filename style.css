@@ -1,0 +1,223 @@
+.body {
+    /* styles all pages body*/
+    margin: 0;
+}
+
+.Welcome {
+    /* styles the title banner*/
+    padding: 80px;
+    text-align: center;
+    background-color: rgb(94, 181, 249);
+    color: white;
+}
+
+.navbar {
+    /* styles the navigation bar*/
+    overflow: hidden;
+    background-color: orange;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+}
+
+.navbar a:hover {
+    background-color: lightsalmon;
+    color: black;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.row {
+    /* styles the layout of the page */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.logo {
+    text-align: center;
+    -ms-flex: 30%;
+    flex: 30%;
+    width: 33%;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 2s;
+    animation-iteration-count: 1;
+}
+
+#div1 {
+    -webkit-animation-timing-function: linear;
+}
+
+ @-webkit-keyframes mymove {
+    from {
+        left: 1000px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+.col {
+    text-align: center;
+    -ms-flex: 30%;
+    flex: 30%;
+    width: 33%;
+    padding: 10px;
+}
+
+.col img {
+    height: 150px;
+    width: 150px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.prod img {
+    width: 150px;
+    height: 150px;
+}
+
+.prod img:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(360deg);
+}
+
+.main {
+    text-align: center;
+    -ms-flex: 70%;
+    flex: 70%;
+    padding: 20px;
+}
+
+.about {
+    text-align: center;
+    -ms-flex: 30%;
+    flex: 30%;
+    padding: 20px;
+}
+
+.about img {
+    width: 400px;
+    height: 400px;
+}
+
+.about h4 {
+    text-align: left;
+}
+
+.about h3 {
+    text-align: center;
+}
+
+.footer {
+    background-color: rgb(94, 181, 249);
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    margin: 5px 2px;
+}
+
+.fa-facebook {
+    border-radius: 50%;
+    background: #3B5998;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.75;
+}
+
+.fa-instagram {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    margin: 5px 2px;
+    border-radius: 50%;
+    background: #125688;
+    color: white;
+}
+
+.poprow {
+    text-align: center;
+}
+
+.poprow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input [type=text],
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

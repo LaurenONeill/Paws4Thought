@@ -1,0 +1,228 @@
+.body {
+    /* styles all pages body*/
+    margin: 0;
+}
+
+.Welcome {
+    /* styles the title banner*/
+    padding: 80px;
+    text-align: center;
+    background-color: rgb(94, 181, 249);
+    color: white;
+}
+
+.navbar {
+    /* styles the navigation bar*/
+    overflow: hidden;
+    background-color: orange;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+}
+
+.navbar a:hover {
+    background-color: lightsalmon;
+    color: black;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.row {
+    /* styles the layout of the page */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.col {
+    text-align: center;
+    -ms-flex: 30%;
+    flex: 30%;
+    width: 33%;
+    padding: 10px;
+}
+
+.col img {
+    height: 150px;
+    width: 150px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.footer {
+    background-color: rgb(94, 181, 249);
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    margin: 5px 2px;
+}
+
+.fa-facebook {
+    border-radius: 50%;
+    background: #3B5998;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.75;
+}
+
+.fa-instagram {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    margin: 5px 2px;
+    border-radius: 50%;
+    background: #125688;
+    color: white;
+}
+
+.popcol {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.popcolumn img {
+    margin-top: 12px;
+    height: 250px;
+}
+
+input [type=text],
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.contact-form {
+    text-align: center;
+    padding: 25px;
+    background-color: white;
+}
+
+.form {
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+
+.form-control {
+    width: 500px;
+    background: white;
+    border: 1px solid grey;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: orange;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {
+    background-color: rgb(94, 181, 249);
+}
+
+.button:active {
+    background-color: orange;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+input {
+    height: 45px;
+}
+
+.footer {
+    background-color: rgb(94, 181, 249);
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    margin: 5px 2px;
+}
+
+.fa-facebook {
+    border-radius: 50%;
+    background: #3B5998;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.75;
+}
+
+.fa-instagram {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    margin: 5px 2px;
+    border-radius: 50%;
+    background: #125688;
+    color: white;
+}
